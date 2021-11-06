@@ -12,12 +12,8 @@
   <meta name="generator" content="Hexo 5.4.0">
 
     
-      <meta name="description" content="卷王之王">
-      
 
         
-          <meta name="keywords" content="卷王之王">
-          
 
             
               <meta name="author" content="Bosai Sun">
@@ -29,7 +25,7 @@
 
                       <title>
                         
-                          HTML | 
+                          计算机组成原理 | 
                               Bosai Sun
                       </title>
 
@@ -114,6 +110,7 @@
               
       </a>
     </div>
+
     <a target="_blank" rel="noopener" href="https://github.com/TheHunkNeil" class="github-corner" aria-label="View source on GitHub"><svg width="80"
         height="80" viewBox="0 0 250 250"
         style="fill:#ffffff; color:rgb(0, 0, 0); position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
@@ -171,7 +168,6 @@
     </div>
   </div>
 </nav>
-
         
           
 
@@ -190,21 +186,21 @@
                                           <div class="post-text layout-block">
                                             <div class="layout-margin">
                                               <h1 class="title-wrap">
-                                                HTML
+                                                计算机组成原理
                                               </h1>
                                               <h2 class="title-sub-wrap">
                                                 <strong>
                                                   Bosai Sun
                                                 </strong>
                                                 <span>发布于</span>
-                                                <time  class="article-date" datetime="2021-11-03T14:25:36.000Z" itemprop="datePublished">2021-11-03</time>
+                                                <time  class="article-date" datetime="2021-11-06T14:35:36.000Z" itemprop="datePublished">2021-11-06</time>
                                               </h2>
                                               <ul class="wrap-list dark">
   
 </ul>
                                                 <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E5%89%8D%E7%AB%AF/">🏷️ 前端</a></li>
+    <li><a href="/tags/%E8%AE%A1%E7%BB%84/">🏷️ 计组</a></li>
   
 </ul>
                                             </div>
@@ -220,172 +216,49 @@
       <!-- 文章 -->
 
 <!-- 文章内容 -->
+
 <div class="body-container">
   <article class="content-container layout-block post-container">
     <div class="article-info">
       
-      
-      
-      
-      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>客户端（Clients）与服务器（Servers）直接传输</p>
-<p> &lt;br＞</p>
-<p><strong>1.什么是 HTML</strong></p>
-<p>HTML 指的是<strong>超文本标记语言</strong> (<strong>Hyper Text Markup Language</strong>)，它是用来描述网页的一种语言</p>
-<p>HTML不是一种编程语言，而是一种标记语言 (markup language)</p>
-<p>标记语言是一套标记标签 (markup tag)</p>
-<p>  &lt;br＞</p>
-<p>1989 年在欧洲核子研究中心（CERN）发明</p>
-<p>1992 年 11 月 3 日出版</p>
-<p>由 W3C（万维网联盟）(World Wide Web Consortium)开发</p>
-<p>从语义上构造文本（Text semantically）</p>
-<p>视觉外观(Visual appearance)不是 HTML 的一部分</p>
-<p> &lt;br＞</p>
-<p><strong>1.2</strong> <strong>HTML 的局限性</strong></p>
-<p>说起 HTML，这其实是个非常单纯的家伙，他只关注<strong>内容的语义</strong>。比如＜h1＞表明这是一个大标题，&lt;p＞表明这是一个段落，&lt;img＞表明这儿有一个图片，&lt;a＞表示此处有链接</p>
-<p>很早的时候，世界上的网站虽然很多，但是他们都有一个共同的特点：<strong>丑</strong></p>
-<p>虽然 HTML 可以做简单的样式，但是带来的是无尽的<strong>臃肿和繁琐</strong></p>
-<p>  &lt;br＞</p>
-<p>&lt;h1＞ Hello, World &lt;/h1＞</p>
-<p>开始的&lt;h1＞：开始标签（opening tag）</p>
-<p>结束的&lt;/h1＞：结束标签（closing tag）</p>
-<p>Hello, World：内容（content）</p>
-<p>&lt;h1＞&lt;h1＞：标签/元素名称（element name）</p>
-<p>&lt;h1＞Hello, World&lt;/h1＞：整个标签/元素（element ）</p>
-<p>  &lt;br＞</p>
-<p>标签/元素可以嵌套</p>
-<p>不能没有内容的标签/元素</p>
-<p>  &lt;br＞</p>
-<p><strong>3.2</strong> <strong>Web</strong></p>
-<p>3.2 Web 标准的构成</p>
-<p>主要包括<strong>结构（Structure）</strong>、<strong>表现( Presentation）和行为（ Behavior）</strong>三个方面</p>
-<p> &lt;br＞</p>
-<table>
-<thead>
-<tr>
-<th><strong>标准</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>结构</td>
-<td>结构用于对<strong>网页元素</strong>进行整理和分类，现阶段主要学的是HTML</td>
-</tr>
-<tr>
-<td>表现</td>
-<td>表现用于设置网页元素的版式，颜色，大小等<strong>外观样式</strong>，主要指的是CSS</td>
-</tr>
-<tr>
-<td>行为</td>
-<td>行为是指网页模型的定义及<strong>交互</strong>的编写，现阶段主要学的是Javascript</td>
-</tr>
-</tbody></table>
-<p>  &lt;br＞</p>
-<p>Web 标准提出的最佳体验方案：<strong>结构、样式、行为相分离</strong></p>
-<p>简单理解：<strong>结构写到HTML 文件中，表现写到 CSS 文件中，行为写到JavaScript 文件中</strong></p>
-<p> &lt;br＞</p>
-<!DOCTYPE html><p>这是文档类型的申明标签</p>
-<html lang="en"＞这是告诉你网页是英文还是中文的en英文，ch-ZN中文
+        
 
-<p>&lt;head＞</p>
-<p>    &lt;meta charset=”UTF-8”＞ 跟python一样的utf-8</p>
-<p>    &lt;meta http-equiv=”X-UA-Compatible” content=”IE=edge”＞</p>
-<p>    &lt;meta name=”viewport” content=”width=device-width, initial-scale=1.0”＞</p>
-<p>  &lt;title＞Document&lt;/title＞</p>
-<p>&lt;/head＞</p>
-<p>&lt;br＞</p>
-<p><strong>1.1 基本语法概述</strong></p>
-<p>1.HTML标签是由<strong>尖括号包围的关键词</strong>，例如&lt;html＞</p>
-<p>2.HTML<strong>标签通常是成对出现的</strong>，例如＜html＞和&lt;/html＞，我们称为<strong>双标签</strong>。标签对中的第一个标签是开始标签，第二个标签是结束标签</p>
-<p>3.有些特殊的标签必须是单个标签（极少情况），例如＜br/＞，我们称为<strong>单标签</strong></p>
-<p> &lt;br＞</p>
-<table>
-<thead>
-<tr>
-<th><strong>标签名</strong></th>
-<th><strong>定义</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>＜html＞&lt;/html＞</td>
-<td>HTML标签</td>
-<td>页面中最大的标签，我们 称为 根标签</td>
-</tr>
-<tr>
-<td>＜head＞&lt;/head＞</td>
-<td>文档的头部</td>
-<td>注意在head标签中我们必须要设置的标签是title</td>
-</tr>
-<tr>
-<td>＜title＞&lt;/title＞</td>
-<td>文档的标题</td>
-<td>让页面拥有一个属于自己的网页标题</td>
-</tr>
-<tr>
-<td>＜body＞&lt;/body＞</td>
-<td>文档的主体</td>
-<td>元素包含文档的所有内容，页面内容 基本都是放到body里面的</td>
-</tr>
-</tbody></table>
-<p><img src="../images/HTML/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png"></p>
-<p>&lt;br＞</p>
-<p><strong>4.2 标题标签 ＜h1＞-&lt;h6＞（重要）</strong></p>
-<p>&lt;h1＞标题一共六级选，&lt;/h1＞</p>
-<p>&lt;h2＞文字加粗一行显。&lt;/h2＞</p>
-<p>&lt;h3＞由大到小依次减，&lt;/h3＞</p>
-<p>&lt;h4＞从重到轻随之变。&lt;/h4＞</p>
-<p>&lt;h5＞语法规范书写后，&lt;/h5＞</p>
-<p>&lt;h6＞具体效果刷新见。&lt;/h6＞</p>
-<p>&lt;body＞</p>
-<p>  &lt;h1＞这是最大号的&lt;/h1＞</p>
-<p>  &lt;h2＞后面都是慢慢小号的&lt;/h2＞</p>
-<p>  &lt;h3＞headline&lt;/h3＞</p>
-<p>  &lt;h4＞headline&lt;/h4＞</p>
-<p>  &lt;h5＞headline&lt;/h5＞</p>
-<p>  &lt;h6＞headline&lt;/h6＞</p>
-<p>&lt;/body＞</p>
+            
+              <section
+                class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+                <p><strong>计算机系统</strong> <strong>=</strong> <strong>硬件</strong> <strong>+</strong> <strong>软件</strong></p>
+<p><strong>硬件：</strong>计算机的实体，如主机，外设</p>
+<p><strong>软件：</strong>由具有各类特殊功能的程序组成</p>
+<p>计算机性能的好坏取决于“软”，“硬” 件功能的总和</p>
+<p><strong>软件</strong> { <strong>系统软件：</strong>用来管理整个计算机系统，例如：操作系统，数据库管理系统，标准程序库，网络软件，语言处理程序，服务程序</p>
+<p>​         { <strong>应用软件：</strong>按任务需求编制成的各种程序，例如：微信，QQ</p>
 
-      </section>
+              </section>
 
-      
-      
-        <nav class="article-nav">
-          
-            <div class="article-nav-item layout-padding">
+              
+                
+                  <nav class="article-nav">
+                    
+                          
+                            <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2021/11/03/LeetCode/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">LeetCode</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
-          
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-    <div class="card-text">
-      
-        <a href="/2021/11/03/C%E8%AF%AD%E8%A8%80/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">C语言</h2>
+        <a href="/2021/11/06/HTML%E7%AC%AC1%E8%8A%82/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">HTML 第一节</h2>
         </a>
       
       <div class="card-text--row">Older</div>
     </div>
   </article>
 </div>
-          
-        </nav>
-      
+                              
+                  </nav>
+                  
 
-      <section class="page-message-container layout-padding">
-        
+                    <section class="page-message-container layout-padding">
+                      
 
 
   
@@ -395,7 +268,7 @@
   
 
 
-      </section>
+                    </section>
     </div>
     <div class="widget-info">
       <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -415,7 +288,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>10</span>
+        <span>11</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -433,9 +306,9 @@
   </div>
 </section>
 
-      
+        
 
-      
+          
 <section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
   <div class="widget-title">
     <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -449,7 +322,7 @@
 </section>
 
 
-      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+            <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
   <div class="widget-title">
     <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
@@ -463,7 +336,7 @@
   </div>
 </section>
 
-      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+              <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
   <div class="widget-title">
     <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
@@ -472,7 +345,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/tags/C/" style="font-size: 10px;" class="tags-cloud-0">C</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 15px;" class="tags-cloud-5">前端</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 20px;" class="tags-cloud-10">数学</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 15px;" class="tags-cloud-5">算法</a> <a href="/tags/%E8%AE%A1%E7%BB%84/" style="font-size: 10px;" class="tags-cloud-0">计组</a> <a href="/tags/%E8%AE%A1%E7%BD%91/" style="font-size: 10px;" class="tags-cloud-0">计网</a>
+      <a href="/tags/C/" style="font-size: 10px;" class="tags-cloud-0">C</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 15px;" class="tags-cloud-5">前端</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 20px;" class="tags-cloud-10">数学</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 20px;" class="tags-cloud-10">算法</a> <a href="/tags/%E8%AE%A1%E7%BB%84/" style="font-size: 10px;" class="tags-cloud-0">计组</a> <a href="/tags/%E8%AE%A1%E7%BD%91/" style="font-size: 10px;" class="tags-cloud-0">计网</a>
     </div>
   </div>
 </section>
@@ -483,10 +356,6 @@
         <!-- footer container -->
 <footer id="footer" class="footer">
   <div class="footer-container">
-    <nav>
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450
-        src="//music.163.com/outchain/player?type=0&id=7016080927&auto=0&height=430"></iframe> -->
-    </nav><br>
     
       <div class="social-icons">
         
@@ -548,8 +417,12 @@
     </svg>
   </div>
   <!-- <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/sakura.js"></script> -->
-  <!-- <script src="https://files.cnblogs.com/files/quaint/sakuraPlus.js"></script> -->
+  <script src="https://files.cnblogs.com/files/quaint/sakuraPlus.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_slide.js"></script>
+  <!--动态线条背景-->
+  <script type="text/javascript" color="220,220,220" opacity='0.7' zIndex="-2" count="200"
+    src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script>
   
     <!-- aplayer -->
 
