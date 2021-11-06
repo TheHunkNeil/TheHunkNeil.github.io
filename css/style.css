@@ -576,6 +576,9 @@ html.show-mobile-nav .navbar-list {
 .header-container {
   position: relative;
 }
+.colortype {
+  font-size: 25px;
+}
 .header-content {
   position: relative;
   width: 100%;
