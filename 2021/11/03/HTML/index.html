@@ -228,7 +228,124 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        
+        <p>客户端（Clients）与服务器（Servers）直接传输</p>
+<p> &lt;br＞</p>
+<p><strong>1.什么是 HTML</strong></p>
+<p>HTML 指的是<strong>超文本标记语言</strong> (<strong>Hyper Text Markup Language</strong>)，它是用来描述网页的一种语言</p>
+<p>HTML不是一种编程语言，而是一种标记语言 (markup language)</p>
+<p>标记语言是一套标记标签 (markup tag)</p>
+<p>  &lt;br＞</p>
+<p>1989 年在欧洲核子研究中心（CERN）发明</p>
+<p>1992 年 11 月 3 日出版</p>
+<p>由 W3C（万维网联盟）(World Wide Web Consortium)开发</p>
+<p>从语义上构造文本（Text semantically）</p>
+<p>视觉外观(Visual appearance)不是 HTML 的一部分</p>
+<p> &lt;br＞</p>
+<p><strong>1.2</strong> <strong>HTML 的局限性</strong></p>
+<p>说起 HTML，这其实是个非常单纯的家伙，他只关注<strong>内容的语义</strong>。比如＜h1＞表明这是一个大标题，&lt;p＞表明这是一个段落，&lt;img＞表明这儿有一个图片，&lt;a＞表示此处有链接</p>
+<p>很早的时候，世界上的网站虽然很多，但是他们都有一个共同的特点：<strong>丑</strong></p>
+<p>虽然 HTML 可以做简单的样式，但是带来的是无尽的<strong>臃肿和繁琐</strong></p>
+<p>  &lt;br＞</p>
+<p>&lt;h1＞ Hello, World &lt;/h1＞</p>
+<p>开始的&lt;h1＞：开始标签（opening tag）</p>
+<p>结束的&lt;/h1＞：结束标签（closing tag）</p>
+<p>Hello, World：内容（content）</p>
+<p>&lt;h1＞&lt;h1＞：标签/元素名称（element name）</p>
+<p>&lt;h1＞Hello, World&lt;/h1＞：整个标签/元素（element ）</p>
+<p>  &lt;br＞</p>
+<p>标签/元素可以嵌套</p>
+<p>不能没有内容的标签/元素</p>
+<p>  &lt;br＞</p>
+<p><strong>3.2</strong> <strong>Web</strong></p>
+<p>3.2 Web 标准的构成</p>
+<p>主要包括<strong>结构（Structure）</strong>、<strong>表现( Presentation）和行为（ Behavior）</strong>三个方面</p>
+<p> &lt;br＞</p>
+<table>
+<thead>
+<tr>
+<th><strong>标准</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>结构</td>
+<td>结构用于对<strong>网页元素</strong>进行整理和分类，现阶段主要学的是HTML</td>
+</tr>
+<tr>
+<td>表现</td>
+<td>表现用于设置网页元素的版式，颜色，大小等<strong>外观样式</strong>，主要指的是CSS</td>
+</tr>
+<tr>
+<td>行为</td>
+<td>行为是指网页模型的定义及<strong>交互</strong>的编写，现阶段主要学的是Javascript</td>
+</tr>
+</tbody></table>
+<p>  &lt;br＞</p>
+<p>Web 标准提出的最佳体验方案：<strong>结构、样式、行为相分离</strong></p>
+<p>简单理解：<strong>结构写到HTML 文件中，表现写到 CSS 文件中，行为写到JavaScript 文件中</strong></p>
+<p> &lt;br＞</p>
+<!DOCTYPE html><p>这是文档类型的申明标签</p>
+<html lang="en"＞这是告诉你网页是英文还是中文的en英文，ch-ZN中文
+
+<p>&lt;head＞</p>
+<p>    &lt;meta charset=”UTF-8”＞ 跟python一样的utf-8</p>
+<p>    &lt;meta http-equiv=”X-UA-Compatible” content=”IE=edge”＞</p>
+<p>    &lt;meta name=”viewport” content=”width=device-width, initial-scale=1.0”＞</p>
+<p>  &lt;title＞Document&lt;/title＞</p>
+<p>&lt;/head＞</p>
+<p>&lt;br＞</p>
+<p><strong>1.1 基本语法概述</strong></p>
+<p>1.HTML标签是由<strong>尖括号包围的关键词</strong>，例如&lt;html＞</p>
+<p>2.HTML<strong>标签通常是成对出现的</strong>，例如＜html＞和&lt;/html＞，我们称为<strong>双标签</strong>。标签对中的第一个标签是开始标签，第二个标签是结束标签</p>
+<p>3.有些特殊的标签必须是单个标签（极少情况），例如＜br/＞，我们称为<strong>单标签</strong></p>
+<p> &lt;br＞</p>
+<table>
+<thead>
+<tr>
+<th><strong>标签名</strong></th>
+<th><strong>定义</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>＜html＞&lt;/html＞</td>
+<td>HTML标签</td>
+<td>页面中最大的标签，我们 称为 根标签</td>
+</tr>
+<tr>
+<td>＜head＞&lt;/head＞</td>
+<td>文档的头部</td>
+<td>注意在head标签中我们必须要设置的标签是title</td>
+</tr>
+<tr>
+<td>＜title＞&lt;/title＞</td>
+<td>文档的标题</td>
+<td>让页面拥有一个属于自己的网页标题</td>
+</tr>
+<tr>
+<td>＜body＞&lt;/body＞</td>
+<td>文档的主体</td>
+<td>元素包含文档的所有内容，页面内容 基本都是放到body里面的</td>
+</tr>
+</tbody></table>
+<p><img src="../images/HTML/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png"></p>
+<p>&lt;br＞</p>
+<p><strong>4.2 标题标签 ＜h1＞-&lt;h6＞（重要）</strong></p>
+<p>&lt;h1＞标题一共六级选，&lt;/h1＞</p>
+<p>&lt;h2＞文字加粗一行显。&lt;/h2＞</p>
+<p>&lt;h3＞由大到小依次减，&lt;/h3＞</p>
+<p>&lt;h4＞从重到轻随之变。&lt;/h4＞</p>
+<p>&lt;h5＞语法规范书写后，&lt;/h5＞</p>
+<p>&lt;h6＞具体效果刷新见。&lt;/h6＞</p>
+<p>&lt;body＞</p>
+<p>  &lt;h1＞这是最大号的&lt;/h1＞</p>
+<p>  &lt;h2＞后面都是慢慢小号的&lt;/h2＞</p>
+<p>  &lt;h3＞headline&lt;/h3＞</p>
+<p>  &lt;h4＞headline&lt;/h4＞</p>
+<p>  &lt;h5＞headline&lt;/h5＞</p>
+<p>  &lt;h6＞headline&lt;/h6＞</p>
+<p>&lt;/body＞</p>
+
       </section>
 
       
