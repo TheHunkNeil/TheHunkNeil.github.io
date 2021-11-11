@@ -195,7 +195,7 @@
                                                   Bosai Sun
                                                 </strong>
                                                 <span>发布于</span>
-                                                <time  class="article-date" datetime="2021-11-06T14:25:36.000Z" itemprop="datePublished">2021-11-06</time>
+                                                <time  class="article-date" datetime="2021-11-06T18:42:49.752Z" itemprop="datePublished">2021-11-06</time>
                                               </h2>
                                               <ul class="wrap-list dark">
   
@@ -228,7 +228,370 @@
             
               <section
                 class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-                
+                <p> <strong>路径之相对路径</strong></p>
+<p><strong>相对路径：</strong>以<strong>引用文件所在位置</strong>为参考基础，而建立出的目录路径</p>
+<p>这里简单来说，<strong>图片相对于HTML 页面的位置</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>相对路径分类</strong></th>
+<th><strong>符号</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>同一级路径</td>
+<td></td>
+<td>图像文件位于HTML文件同一级如&lt;img src=”baidu.gif” /＞</td>
+</tr>
+<tr>
+<td>下一级路径</td>
+<td>/</td>
+<td>图像文件位于HTML文件下一级 如&lt;img  src=”images/baidu.gif” /＞</td>
+</tr>
+<tr>
+<td>上一级路径</td>
+<td>../</td>
+<td>图像文件位于HTML文件上一级 如&lt;img  src=”../baidu.gif” /＞</td>
+</tr>
+</tbody></table>
+ <br>
+
+<p>&lt;body＞</p>
+<p>​    &lt;img src=”images/头像.jpg” title=”直接就是在这里放下一级文件就可以了” /＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+<p><strong>绝对路径：</strong>是指目录下的绝对位置 ，直接到达目标位置，通常是从盘符开始的路径</p>
+<p>例如，”D\web\img\logo.gif” 或完整的网络地址”<a target="_blank" rel="noopener" href="http://www.itcast.cn/images/logo.gif%E2%80%9D">http://www.itcast.cn/images/logo.gif”</a></p>
+<p><strong>一般情况下不使用绝对路径，网络的绝对路径是可以使用</strong></p>
+<p>在HTML标签中，&lt;日＞标签用于定义超链接，作用是从一个页面链接到另一个页面</p>
+<p>1.链接的语法格式</p>
+<p>2.链接的分类</p>
+  <br>
+
+<p><a target="_blank" rel="noopener" href="https://www.ju.se/somefolder/somefile.html">https://www.ju.se/somefolder/somefile.html</a></p>
+<p>https：Scheme</p>
+<p>ww.ju.se：Host</p>
+<p>somefolder：Path</p>
+<p>omefile.html：Filename</p>
+  <br>
+
+ 
+
+<p><strong>1.链接的语法格式</strong></p>
+<p>&lt;a href=”跳转目标” target=”目标窗口的弹出方式”＞文本或图像&lt;/a＞</p>
+<p>单词 anchor 的缩写，意为：锚</p>
+<p>两个属性的作用如下：</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>href</td>
+<td>用于指定链接目标的url地址，（必须属性） 当为标签应用href属性时，它就具有了超链接的功能</td>
+</tr>
+<tr>
+<td>target</td>
+<td>用于指定链接页面的打开方式，其中_self为默认值，__blank为在新窗口中打开方式</td>
+</tr>
+</tbody></table>
+  <br>
+
+<p>&lt;body＞</p>
+<p>  &lt;h4＞外部链接&lt;/h4＞</p>
+<p>​    &lt;a href=”<a target="_blank" rel="noopener" href="http://www.qq.com&quot;/">http://www.qq.com&quot;</a> target=”_blank”＞ href是超链接是必须要写的，target是取决于你打开的网站是再开一个还是从自身开启&lt;/a＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+<p><strong>2.链接分类：</strong></p>
+<p>1.外部链接：例如&lt;ahref=”http:// “<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>“＞百度 &lt;/a＞</p>
+<p>2.内部链接;网站内部页面之间的相互链接，直链接内部页面名称即可，例如＜a href=“index.htmi”＞首页&lt;/a＞</p>
+<p>&lt;body＞</p>
+<p>  &lt;h4＞内部链接&lt;/h4＞</p>
+<p>​    &lt;a href=”index.html” target=”_blank”＞ 在同目录下是可以直接写并且可以直接跳转的&lt;/a＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+<p>3.空链接：如果当时没有确定链接目标时，&lt;a href= “#”＞首页&lt;/a＞</p>
+<p>&lt;body＞</p>
+<p>&lt;h4＞内部链接&lt;/h4＞</p>
+<p>&lt;a href=”#” target=”_blank”＞ 这是下载链接，可以直接下载的&lt;/a＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+<p>4.下载链接：如果 href 里面地址是一个文件或者压缩包，会下载这个文件</p>
+<p>5.网页元素链接：在网页中的各种网页元素，如文本、图像、表格、音频、视频等都可以添加超链接</p>
+<p>&lt;body＞</p>
+<p>  &lt;h4＞下载链接&lt;/h4＞</p>
+<p>​    &lt;a href=”头像.zip” target=”_blank”＞ 这是下载链接，可以直接下载的&lt;/a＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+<p>&lt;body＞</p>
+<p>  &lt;h4＞图片链接&lt;/h4＞</p>
+<p>​    &lt;a href=”<a target="_blank" rel="noopener" href="http://www.baidu.com&quot;/">http://www.baidu.com&quot;</a> target=”_blank”＞ &lt;img src=”images/头像.jpg” /＞&lt;/a＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+<p>6.锚点链接：点我们点击链接，可以快速定位到页面中的某个位置</p>
+<p>1.在能接文木的 href 属性中，设置属性值为 <strong>#名字</strong> 的形式，如&lt;a href = “#two“＞第2集 &lt;/a＞</p>
+<p>2.找到目标位置标签，里面添加一个id 属性 = 刚才的名字，如：＜h3 id=”two”＞第2集介绍&lt;/h3＞</p>
+  <br>
+
+<p>&lt;body＞</p>
+<p>&lt;a href=”#live”＞ 早年经历&lt;/a＞</p>
+<p>2019年8月18日， 通过href=’#’的方式来快速跳到id那里</p>
+<p>h3 id=”live”＞早年经历&lt;/h3＞</p>
+<p>强森的父亲和祖父都是世界职业摔跤界屡获殊荣的名人。当他二十出头时，强森搬到了宾夕法尼亚州开始专注于美式橄榄球运动。他在迈阿密大学时加入了迈阿密大学的美式橄榄球队，并在1991年赢得了他第一个全国冠军。之后他又参加了92、95两届全国锦标赛，并在95届对战内布拉斯加大学争夺联邦快递橙碗比赛后结束了美式橄榄球生涯 。</p>
+<p>强森26岁开始参加世界职业摔角联盟。2000年，他的自传《巨石如此说》荣登纽约时报畅销书排行榜；同时在他的美国职业摔角集锦CD中，收录了与其他艺术家合作的歌曲，包括格莱美奖得主Wyclef Jean。</p>
+<p>&lt;/body＞</p>
+  <br>
+
+ 
+
+ 
+
+<p><strong>注释</strong></p>
+<p>如果器要在HTML 文档中添加一些便于阅读和理解但又 不器要显示在页面中的注释文字，就需要使用注释标签</p>
+<p>HTML中的<strong>注释以“&lt;！”开头，以“–＞〞 结束</strong></p>
+<p><strong>快捷键：ctrl +</strong> <strong>/</strong></p>
+  <br>
+
+<p>一句话：注释标签里面的内容是给程序猿看的，这个代码是不执行不品示到页面中的</p>
+<p>添加注释是为了更好地解释代码的功能，便于相关开发人员理解和阅读代码，程序是不会执行注释内容的</p>
+  <br>
+
+ 
+
+ 
+
+<p><strong>特殊宇符</strong></p>
+<p>在HTML 页面中，一些特殊的符号很难或者不方便直接使用，此时我们就可以使用下面的字符来替代</p>
+<p><img src="/images/HTML%E7%AC%AC2%E8%8A%82/4c521dd8a5e1dc3f389616d6a44c461-16366057278956.jpg"></p>
+<p>  &lt;讲&nbsp;&nbsp;&nbsp;&nbsp;究nbsp就是空格，因为纯打很多空格的话就显示一个空格，而lt和gt是大于号和小于号，使用&gt;</p>
+<p>&lt;/body＞</p>
+  <br>
+
+ 
+
+ 
+
+<p><strong>表格的基本语法</strong></p>
+<table>
+
+<p>&lt;tr＞</p>
+<p>&lt;td＞单元格内的文字&lt;/td＞</p>
+<p>&lt;/tr＞</p>
+<p>&lt;/table＞</p>
+  <br>
+
+<ol>
+<li><p>&lt;table＞&lt;/table＞是用于定义表格的标签。</p>
+</li>
+<li><p>&lt;tr＞&lt;/tr＞标签用于定义表格中的行 ，必须嵌套在&lt;table＞&lt;/table＞标签中</p>
+</li>
+<li><p>&lt;td＞&lt;/td＞用于定义表格中的单元格，必须嵌套在&lt;tr＞&lt;/tr＞标签中</p>
+</li>
+<li><p>字母td指表格数据（table data），即数据单元格的内容</p>
+</li>
+</ol>
+  <br>
+
+<p>&lt;body＞</p>
+<p>&lt;table＞</p>
+<p>​    &lt;tr＞&lt;td＞姓名&lt;/td＞&lt;td＞性别&lt;/td＞ &lt;td＞年龄&lt;/td＞&lt;/tr＞</p>
+<p>​    &lt;tr＞&lt;td＞孙博赛&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞</p>
+<p>​    &lt;tr＞&lt;td＞陈书文&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞ </p>
+<p>​    &lt;tr＞&lt;td＞王子旭&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞</p>
+<p>  &lt;/table＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+ 
+
+ 
+
+<p><strong>表头单元格标签</strong></p>
+<p>一般表头单元格位于表格的第一行或第一列，表头单元格里面的文本内容加粗居中显示.</p>
+<p><strong>＜th＞</strong>标签表示 HTML 表格的表头部分(tablehead 的缩写）</p>
+<p>&lt;table＞</p>
+<p>&lt;tr＞</p>
+<p>&lt;th＞姓名&lt;/th＞</p>
+<p>&lt;/tr＞</p>
+<p>&lt;/table＞</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>性别</th>
+<th>电话</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>小王</td>
+<td>女</td>
+<td>515</td>
+</tr>
+<tr>
+<td>小明</td>
+<td>男</td>
+<td>230</td>
+</tr>
+</tbody></table>
+  <br>
+
+<p>&lt;body＞</p>
+<p>&lt;table＞</p>
+<p>​    &lt;tr＞&lt;th＞姓名&lt;/th＞&lt;th＞性别&lt;/th＞ &lt;th＞年龄&lt;/th＞&lt;/tr＞第一行可以使用th来直接加粗和居中</p>
+<p>​    &lt;tr＞&lt;td＞孙博赛&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞</p>
+<p>​    &lt;tr＞&lt;td＞陈书文&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞ </p>
+<p>​    &lt;tr＞&lt;td＞王子旭&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞</p>
+<p>  &lt;/table＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+ 
+
+<p><strong>表格属性</strong></p>
+<p>表格标签这部分属性我们实际开发我们不常用，后面通过CSS 来设置</p>
+<p>目的有2个：</p>
+<p>1.记住文此英语单词,后面CSS 会使用</p>
+<p>2.直观感受表格的外观形态</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性名</strong></th>
+<th><strong>属性值</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>align</td>
+<td>left, center, right</td>
+<td>规定表格相对周国元素的对齐方式</td>
+</tr>
+<tr>
+<td>border</td>
+<td>1或“”</td>
+<td>规定表格单元是否拥有边框，默认为”“，表示没有边框</td>
+</tr>
+<tr>
+<td>cellpadding</td>
+<td>像素值</td>
+<td>规定单元边沿与其内容之间的空白，默认1像素</td>
+</tr>
+<tr>
+<td>cellspacing</td>
+<td>像素值</td>
+<td>规定单元格之间的空白，默认2像素</td>
+</tr>
+<tr>
+<td>width</td>
+<td>像素值或百分比</td>
+<td>规定表格的宽度</td>
+</tr>
+</tbody></table>
+  <br>
+
+<p>&lt;body＞</p>
+<p>table align=”center” border=”l” cellpadding=”20” cellspacing=”0” width=”500” height=”250”&gt;&lt;!–cellpadding是内部的文字和边框的距离，cellspacing是边框的距离，设置为0就是实线了。然后width是可以设置单元格的宽度,height可以设置单元格的高度–＞</p>
+<p>​    &lt;tr＞&lt;th＞姓名&lt;/th＞&lt;th＞性别&lt;/th＞ &lt;th＞年龄&lt;/th＞&lt;/tr＞</p>
+<p>​    &lt;tr＞&lt;td＞孙博赛&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞</p>
+<p>​    &lt;tr＞&lt;td＞陈书文&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞ </p>
+<p>​    &lt;tr＞&lt;td＞王子旭&lt;/td＞&lt;td＞男&lt;/td＞ &lt;td＞19&lt;/td＞&lt;/tr＞</p>
+<p>  &lt;/table＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+<p><strong>表格结构标签</strong></p>
+<ol>
+<li><p>&lt;thead＞&lt;/thead＞：用于定义表格的头部。&lt;thead＞内部必须拥有&lt;tr＞标签。一般是位于第一行</p>
+</li>
+<li><p>&lt;tbody＞ &lt;/tbody＞：用于定义表格的主体，主要用于放数据本体</p>
+</li>
+</ol>
+  <br>
+
+<p><strong>合并单元格三步曲：</strong></p>
+<p>1.先确定是跨行还是跨列合并。</p>
+<p>2.找到目标单元格，写上合并方式=合并的单元格数量。比如：&lt;td colspan= “2” ＞&lt;/td＞</p>
+<p>3.删除多余的单元格</p>
+  <br>
+
+ 
+
+<p>&lt;body＞</p>
+<p>table align=”center” border=”l” cellpadding=”0” cellspacing=”0” width=”500” height=”250”＞</p>
+<p>  &lt;tr＞</p>
+<p>​    &lt;td＞&lt;/td＞</p>
+<p>​    &lt;td colspan=”2”＞&lt;/td＞</p>
+<p>  &lt;/tr＞</p>
+<p>  &lt;tr＞</p>
+<p>​    &lt;td rowspan=”2”＞&lt;/td＞</p>
+<p>​    &lt;td＞&lt;/td＞</p>
+<p>​    &lt;td＞&lt;/td＞</p>
+<p>  &lt;/tr＞</p>
+<p>  &lt;tr＞</p>
+<p>​    &lt;td＞&lt;/td＞</p>
+<p>​    &lt;td＞&lt;/td＞</p>
+<p>  &lt;/tr＞</p>
+<p>&lt;/body＞</p>
+  <br>
+
+ 
+
+ 
+
+<p><strong>合并单元格</strong></p>
+<p><strong>合并单元格方式：</strong></p>
+<p>跨行合并：rowspan=”合并单元格的个数“</p>
+<p>跨列合并：colspan=”合并单元格的个数”</p>
+<p><img src="/images/HTML%E7%AC%AC2%E8%8A%82/280594167f742e814745708ba124471-16366059365028.jpg"></p>
+ <br>
+
+<p>表格是用来显示数据的，那么<strong>列表就是用来布局的</strong></p>
+<p><strong>列表</strong>最大的特点就是整齐、整洁、有序，它作为布局会更加自由和方便</p>
+<p>根据使用情景不同 ，列表可以分为三大类：<strong>无序列表、有序列表和自定义列表</strong></p>
+<p><img src="/images/HTML%E7%AC%AC2%E8%8A%82/5f7eb4a04998a806f6f6cadf573b548-16366059468419.jpg"></p>
+ <br>
+
+<p><strong>无序列表（重点）</strong></p>
+<p>&lt;ul＞标签表示 HTML 页面中项目的无序列表，一般会以项目符号呈现列表项，而列表项使用 &lt;li＞标签定义</p>
+<p>无序列表的基本语法格式如下：</p>
+  <br>
+
+<p>&lt;ul＞</p>
+<p>&lt;1i＞列表项1&lt;/1i＞</p>
+<p>&lt;1i＞列表项2&lt;/1i＞</p>
+<p>&lt;1i＞列表项3&lt;/1i＞</p>
+<p>&lt;/ul＞</p>
+  <br>
+
+<ol>
+<li><p>无序列表的各个列表项之问没有顺序级别之分，是并列的</p>
+</li>
+<li><p>&lt;ul＞&lt;/ul＞中只能嵌套 &lt;li＞&lt;/li＞，直接在&lt;ul＞&lt;/ul＞标签中输入其他标签或者文字的做法是不被允许的</p>
+</li>
+<li><p>&lt;li＞ 与&lt;/li＞之间相当于一个容器，可以容纳所有元素。</p>
+</li>
+<li><p>无序列表会带有自己的样式属性 ，但在实际使用时，我们会使用CSS 来设置</p>
+</li>
+</ol>
+  <br>
+
+<p>&lt;body＞</p>
+<p>  &lt;4h＞你喜欢吃的食物?&lt;/4h＞</p>
+<p>  &lt;ul＞</p>
+<p>​    &lt;li＞ul里面只能嵌套li&lt;/li＞</p>
+<p>​    &lt;li＞li里面可以嵌套其他的例如&lt;p，是可以的但是ul不行，只能放li&lt;/li＞</p>
+<p>​    &lt;li＞这就是并列的，无序的&lt;/li＞</p>
+<p>  &lt;/ul＞</p>
+<p>&lt;/body＞</p>
+
               </section>
 
               
@@ -240,8 +603,8 @@
     
     <div class="card-text">
       
-        <a href="/2021/11/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">计算机组成原理</h2>
+        <a href="/2021/11/09/HTML%E7%AC%AC3%E8%8A%82/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">HTML 第三节</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -255,8 +618,8 @@
     
     <div class="card-text">
       
-        <a href="/2021/11/05/HTML%E7%AC%AC1%E8%8A%82/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">HTML 第一节</h2>
+        <a href="/2021/11/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">计算机组成原理</h2>
         </a>
       
       <div class="card-text--row">Older</div>
